@@ -1,0 +1,18 @@
+Book my show
+
+-> We need a reusable carousal
+-> Hero carousal
+-> common carousal
+-> cast and crew small carousal
+
+Pages
+-> Home Page
+-> Movie Page
+-> Categories Page
+-> Razorpay payment gateway
+
+Building
+-> Layouts
+-> Routes
+-> Pages
+-> Components
