@@ -3,7 +3,7 @@ import react from "react";
 const Poster = (props) => {
   return (
     <>
-     <div>
+     <div className="px-4">
       <div className="h-80">
       <img src={props.src} className="w-full h-full rounded-xl"/>
       </div>
