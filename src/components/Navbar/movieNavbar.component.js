@@ -1,24 +1,20 @@
 import React from "react";
-import {BiChevronRight, BiSearch} from "react-icons/bi";
+import {BiChevronRight, BiSearch, BiShareAlt} from "react-icons/bi";
 const NavSm = () => {
   return (
     <>
-     <div className="text-white flex items-center justify-between">
+     <div className="text-gray-800 flex items-center justify-between">
        <div>
         <h3 className="text-xl font-bold">It All Starts Here!</h3>
-        <span className="text-gray-400 text-xs flex items-center">
-        Mumbai
-         <BiChevronRight/>
-        </span>
+
        </div>
        <div className="w-8 h-8">
-       <BiSearch className="w-full h-full" />
+       <BiShareAlt className="w-full h-full" />
     </div>
      </div>
     </>
   )
 };
-
 const NavMd = () => {
   return (
     <>
@@ -37,17 +33,17 @@ const NavMd = () => {
 };
 const NavLg = () => {};
 
-const Navbar = () => {
+const MovieNavbar = () => {
 return (
   <>
-   <nav className="bg-gray-800 px-2 py-4">
+   <nav className=" px-2 py-4">
       <div className="md:hidden">{/*Mobile Screen*/}
           <NavSm />
       </div>
-      <div className="hidden md:flex lg:hidden">{/*Tablet Screen*/}
+      <div className="hidden md:flex md:block lg:hidden">{/*Tablet Screen*/}
          <NavMd />
       </div>
-      <div className="hidden lg:flex">{/*Large Screen*/}
+      <div className="bg-gray-800 hidden lg:flex">{/*Large Screen*/}
 
       </div>
    </nav>
@@ -55,4 +51,4 @@ return (
 );
 };
 
-export default Navbar;
+export default MovieNavbar;
