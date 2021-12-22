@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 import Poster from "../Poster/Poster.component";
 
-export const Premier = () => {
+export const Premier = (props) => {
   const settings = {
     infinity: true,
     slidesToShow: 5,
@@ -12,44 +12,6 @@ export const Premier = () => {
     InitialSlide:0
   };
 
-const PremierImages =[
-  {
-    src:"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00302306-wsyqpgjqdc-portrait.jpg",
-    alt:"Premier Image",
-    title:"Proximity",
-    subtitle:"English"
-  },
-  {
-    src:"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00302306-wsyqpgjqdc-portrait.jpg",
-    alt:"Premier Image",
-    title:"Proximity",
-    subtitle:"English"
-  },
-  {
-    src:"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00302306-wsyqpgjqdc-portrait.jpg",
-    alt:"Premier Image",
-    title:"Proximity",
-    subtitle:"English"
-  },
-  {
-    src:"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00302306-wsyqpgjqdc-portrait.jpg",
-    alt:"Premier Image",
-    title:"Proximity",
-    subtitle:"English"
-  },
-  {
-    src:"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00302306-wsyqpgjqdc-portrait.jpg",
-    alt:"Premier Image",
-    title:"Proximity",
-    subtitle:"English"
-  },
-  {
-    src:"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00302306-wsyqpgjqdc-portrait.jpg",
-    alt:"Premier Image",
-    title:"Proximity",
-    subtitle:"English"
-  }
-];
   return (
     <>
     <div className="flex flex-col items-start gap-1 py-4">
@@ -57,7 +19,7 @@ const PremierImages =[
      <p className="text-white text-sm">Brand New releases every friday</p>
     </div>
      <Slider {...settings} >
-        {PremierImages.map((image)=> (
+        {props.PremierImages.map((image)=> (
           <Poster {...image} isDark/>
         ))}
        </Slider>

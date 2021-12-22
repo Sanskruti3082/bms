@@ -35,7 +35,7 @@ const HomePage =() => {
        />
       </div>
       <div className="mx-auto px-32 container">
-       <Premier/>
+       <Premier PremierImages={popularMovies}/>
       </div>
 
     </div>
