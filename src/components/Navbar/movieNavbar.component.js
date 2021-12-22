@@ -31,7 +31,22 @@ const NavMd = () => {
 
   );
 };
-const NavLg = () => {};
+const NavLg = () => {
+  return (
+    <>
+      <div className="w-full flex gap-3 items-center bg-white px-3 py-2 rounded-md">
+        <BiSearch />
+         <input
+           type="search"
+           className="w-full"
+           placeholder="Search for Movies, Events, Plays, Sports and Activities"
+         />
+      </div>
+
+    </>
+
+  );
+};
 
 const MovieNavbar = () => {
 return (
@@ -44,7 +59,7 @@ return (
          <NavMd />
       </div>
       <div className="bg-gray-800 hidden lg:flex">{/*Large Screen*/}
-
+          <NavLg />
       </div>
    </nav>
   </>
