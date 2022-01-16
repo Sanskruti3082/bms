@@ -1,4 +1,5 @@
 import {Route} from "react-router-dom";
+
 import axios from "axios";
 //HOC
 import DefaultHOC from "./HOC/Default.HOC";
@@ -7,6 +8,13 @@ import MovieHOC from "./HOC/Movie.HOC";
 //Pages
 import HomePage from "./pages/Home.page";
 import Movie from "./pages/Movie.page";
+
+// eslint-disable-next-line
+alert(); // eslint-disable-line
+
+// eslint-disable-next-line
+
+
 
 //axios default settings
 axios.defaults.baseURL = "https://api.themoviedb.org/3";
